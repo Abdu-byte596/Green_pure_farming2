@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organic Fertilizers - GreenFarm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <span>&#127807;</span> GreenFarm
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tree-plantation.html">Tree Plantation</a></li>
+      <li><a href="organic-fertilizers.html" class="active">Organic Fertilizers</a></li>
+      <li><a href="crop-guide.html">Crop Guide</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="feedback.html" class="nav-cta">Join the Movement</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="tree-plantation.html">Tree Plantation</a>
+    <a href="organic-fertilizers.html" class="active">Organic Fertilizers</a>
+    <a href="crop-guide.html">Crop Guide</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="feedback.html" class="nav-cta">Join the Movement</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Nature's Nutrient Cycle</h1>
+    <p>
+      Chemical fertilizers feed the plant temporarily while starving the soil.
+      Organic fertilizers feed the soil, which in turn builds resilient, healthy
+      plants that can thrive for generations.
+    </p>
+  </div>
+
+  <!-- FERTILIZER CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+
+        <!-- Compost -->
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=600&q=80"
+            alt="Compost"
+          />
+          <div class="card-body">
+            <div class="card-title">Compost</div>
+            <span class="card-label">Made From:</span>
+            <p class="card-text">Decomposed organic matter (leaves, food scraps, crop residue).</p>
+            <span class="card-label">Benefits:</span>
+            <p class="card-text">Improves soil structure, water retention, and microbial activity. Provides a slow release of broad-spectrum nutrients.</p>
+            <div class="card-best">Best For: Universally beneficial; highly recommended for vegetables and foundational soil building.</div>
+          </div>
+        </div>
+
+        <!-- Vermicompost -->
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80"
+            alt="Vermicompost"
+          />
+          <div class="card-body">
+            <div class="card-title">Vermicompost</div>
+            <span class="card-label">Made From:</span>
+            <p class="card-text">Organic waste broken down by earthworms.</p>
+            <span class="card-label">Benefits:</span>
+            <p class="card-text">Extremely nutrient-dense. Rich in humic acids and growth hormones. Improves plant immunity.</p>
+            <div class="card-best">Best For: Tomatoes, Turmeric, high-value vegetables, and seedling nurseries.</div>
+          </div>
+        </div>
+
+        <!-- Neem Cake -->
+        <div class="card">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&q=80"
+            alt="Neem Cake"
+          />
+          <div class="card-body">
+            <div class="card-title">Neem Cake</div>
+            <span class="card-label">Made From:</span>
+            <p class="card-text">The residue left after extracting oil from neem seeds.</p>
+            <span class="card-label">Benefits:</span>
+            <p class="card-text">Acts as both a fertilizer and a natural pesticide. Protects roots from nematodes and soil grubs.</p>
+            <div class="card-best">Best For: Chili, Onion, Tomato, and cash crops prone to root diseases.</div>
+          </div>
+        </div>
+
+        <!-- FYM -->
+        <div class="card">
+          <div class="card-img-placeholder">Farm Yard Manure</div>
+          <div class="card-body">
+            <div class="card-title">Farm Yard Manure (FYM)</div>
+            <span class="card-label">Made From:</span>
+            <p class="card-text">Aged mixture of cow dung, urine, and agricultural litter.</p>
+            <span class="card-label">Benefits:</span>
+            <p class="card-text">The traditional backbone of Indian farming. Adds bulk organic matter and essential NPK (Nitrogen, Phosphorus, Potassium).</p>
+            <div class="card-best">Best For: Rice, Cotton, Maize, and broad-acre staples.</div>
+          </div>
+        </div>
+
+        <!-- Green Manure -->
+        <div class="card">
+          <div class="card-img-placeholder">Green Manure</div>
+          <div class="card-body">
+            <div class="card-title">Green Manure</div>
+            <span class="card-label">Made From:</span>
+            <p class="card-text">Specific cover crops (like Sunn hemp or Dhaincha) grown and then plowed back into the soil.</p>
+            <span class="card-label">Benefits:</span>
+            <p class="card-text">Fixes atmospheric nitrogen directly into the soil. Prevents weed growth and soil erosion during off-seasons.</p>
+            <div class="card-best">Best For: Grown right before sowing Rice, Wheat, or Maize.</div>
+          </div>
+        </div>
+
+        <!-- Bone Meal -->
+        <div class="card">
+          <div class="card-img-placeholder">Bone Meal</div>
+          <div class="card-body">
+            <div class="card-title">Bone Meal</div>
+            <span class="card-label">Made From:</span>
+            <p class="card-text">Finely crushed animal bones.</p>
+            <span class="card-label">Benefits:</span>
+            <p class="card-text">Exceptional source of slow-release phosphorus and calcium. Essential for root development and flowering.</p>
+            <div class="card-best">Best For: Root crops, Cotton, and heavy flowering plants.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&#127807; GreenFarm</h3>
+        <p>
+          A Community Service Project by CSE students to raise awareness about
+          organic and traditional farming practices that protect our soil, water,
+          and health.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tree-plantation.html">Tree Plantation</a></li>
+          <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+          <li><a href="crop-guide.html">Crop Guide</a></li>
+          <li><a href="awareness.html">Awareness</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">CSP Project</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>GreenFarm CSP Project &mdash; CSE Department &mdash; All rights reserved &copy; 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>

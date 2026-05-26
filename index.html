@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenFarm - Return to the Roots</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <span>&#127807;</span> GreenFarm
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="tree-plantation.html">Tree Plantation</a></li>
+      <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+      <li><a href="crop-guide.html">Crop Guide</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="feedback.html" class="nav-cta">Join the Movement</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="active">Home</a>
+    <a href="tree-plantation.html">Tree Plantation</a>
+    <a href="organic-fertilizers.html">Organic Fertilizers</a>
+    <a href="crop-guide.html">Crop Guide</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="feedback.html" class="nav-cta">Join the Movement</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img
+      class="hero-bg"
+      src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80"
+      alt="Organic farm landscape"
+    />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Return to the roots.<br /><span>Restore the soil.</span></h1>
+      <p>
+        Chemical fertilizers are killing our land and our future. Join the
+        movement to switch back to traditional, natural farming methods.
+      </p>
+      <div class="btn-group">
+        <a href="awareness.html" class="btn btn-primary">Learn the Impact</a>
+        <a href="organic-fertilizers.html" class="btn btn-secondary">Organic Guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3">
+        <div class="mission-item">
+          <div class="mission-icon red">&#9888;</div>
+          <h3>The Chemical Crisis</h3>
+          <p>
+            Decades of chemical dependency have degraded our soil, polluted water
+            sources, and harmed farmer health. The yield gains are temporary, but
+            the damage is lasting.
+          </p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-icon green">&#127807;</div>
+          <h3>The Organic Solution</h3>
+          <p>
+            By embracing compost, vermicompost, and natural manure, we can restore
+            soil microbiology, lock in carbon, and grow healthier, safer food for
+            everyone.
+          </p>
+        </div>
+        <div class="mission-item">
+          <div class="mission-icon brown">&#127891;</div>
+          <h3>A Student Initiative</h3>
+          <p>
+            GreenFarm is a Community Service Project dedicated to empowering local
+            farmers with knowledge, resources, and actionable steps toward
+            sustainability.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE CARDS -->
+  <section class="section section-muted">
+    <div class="container">
+      <h2 class="section-title">Explore the Movement</h2>
+      <p class="section-sub">
+        Navigate through our awareness pages and discover how you can make a
+        difference today.
+      </p>
+      <div class="grid-4">
+        <a href="tree-plantation.html" class="nav-card">
+          <div>
+            <h3>Tree Plantation</h3>
+            <p>How roots restore the earth</p>
+          </div>
+          <div class="arrow">&#8594;</div>
+        </a>
+        <a href="organic-fertilizers.html" class="nav-card">
+          <div>
+            <h3>Organic Fertilizers</h3>
+            <p>Nature's nutrient cycle</p>
+          </div>
+          <div class="arrow">&#8594;</div>
+        </a>
+        <a href="crop-guide.html" class="nav-card">
+          <div>
+            <h3>Crop Guide</h3>
+            <p>What to use and when</p>
+          </div>
+          <div class="arrow">&#8594;</div>
+        </a>
+        <a href="feedback.html" class="nav-card">
+          <div>
+            <h3>Take Action</h3>
+            <p>Join our CSP initiative</p>
+          </div>
+          <div class="arrow">&#8594;</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&#127807; GreenFarm</h3>
+        <p>
+          A Community Service Project by CSE students to raise awareness about
+          organic and traditional farming practices that protect our soil, water,
+          and health.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tree-plantation.html">Tree Plantation</a></li>
+          <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+          <li><a href="crop-guide.html">Crop Guide</a></li>
+          <li><a href="awareness.html">Awareness</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">CSP Project</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>GreenFarm CSP Project &mdash; CSE Department &mdash; All rights reserved &copy; 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>

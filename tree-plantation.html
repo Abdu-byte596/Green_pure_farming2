@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tree Plantation - GreenFarm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <span>&#127807;</span> GreenFarm
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tree-plantation.html" class="active">Tree Plantation</a></li>
+      <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+      <li><a href="crop-guide.html">Crop Guide</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="feedback.html" class="nav-cta">Join the Movement</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="tree-plantation.html" class="active">Tree Plantation</a>
+    <a href="organic-fertilizers.html">Organic Fertilizers</a>
+    <a href="crop-guide.html">Crop Guide</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="feedback.html" class="nav-cta">Join the Movement</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Trees: The Anchors of Agriculture</h1>
+    <p>
+      A healthy farm is more than just crops. Trees play a foundational role in
+      maintaining soil integrity, managing water, and supporting the biodiversity
+      necessary for organic farming to thrive.
+    </p>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="full-img-wrap">
+    <img
+      src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1400&q=80"
+      alt="Lush green trees in a forest"
+    />
+  </div>
+
+  <!-- TWO-COL CONTENT -->
+  <div class="two-col">
+    <div>
+      <h2>Soil Restoration and Protection</h2>
+      <p>
+        Tree roots hold soil in place, dramatically reducing erosion from wind and
+        rain. In areas degraded by chemical farming, planting trees is the first
+        step to recovery.
+      </p>
+      <p>
+        Their fallen leaves create natural mulch, returning organic carbon and
+        essential nutrients back to the earth. Deep-rooted trees also bring up
+        minerals from deep underground, making them available to shallower-rooted
+        crops.
+      </p>
+    </div>
+    <div>
+      <h2>Water and Microclimate</h2>
+      <p>
+        Trees act as natural water pumps. They improve soil porosity, allowing
+        rainwater to penetrate deep into groundwater reserves rather than running
+        off. A farm bordered by trees maintains a cooler, more humid microclimate
+        that protects delicate crops from harsh sun and dry winds.
+      </p>
+      <p>
+        By integrating agroforestry into traditional farming, we create a resilient
+        ecosystem capable of withstanding climate fluctuations.
+      </p>
+    </div>
+    <div>
+      <h2>Biodiversity Support</h2>
+      <p>
+        Trees provide habitat for birds, insects, and beneficial organisms that
+        naturally control pests. A farm with diverse tree cover needs far fewer
+        chemical pesticides because nature balances itself.
+      </p>
+      <p>
+        Planting even a few trees along field borders can increase crop yield and
+        quality while dramatically reducing input costs.
+      </p>
+    </div>
+    <div>
+      <h2>Carbon Capture and Climate</h2>
+      <p>
+        Every tree planted is a small act of climate action. Trees absorb CO2 from
+        the atmosphere and lock carbon into the soil, helping to reverse the
+        greenhouse effect caused by industrial farming.
+      </p>
+      <p>
+        Agroforestry systems that combine trees and crops have been shown to be
+        significantly more productive and climate-resilient than monoculture
+        farming.
+      </p>
+    </div>
+  </div>
+
+  <!-- STATS SECTION -->
+  <section class="section section-muted">
+    <div class="container">
+      <h2 class="section-title">Why Trees Matter in Farming</h2>
+      <p class="section-sub">The numbers speak for themselves. Trees are not optional for sustainable agriculture.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:40px 24px;">
+            <div style="font-size:3rem; font-weight:800; color:var(--green-main); margin-bottom:8px;">30%</div>
+            <div style="font-weight:600; font-size:1rem; margin-bottom:10px;">Soil Erosion Reduction</div>
+            <p class="card-text">Farms with tree borders lose 30% less topsoil to erosion compared to open monoculture fields.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:40px 24px;">
+            <div style="font-size:3rem; font-weight:800; color:var(--green-main); margin-bottom:8px;">50%</div>
+            <div style="font-weight:600; font-size:1rem; margin-bottom:10px;">Better Water Retention</div>
+            <p class="card-text">Tree-integrated farms retain up to 50% more water in the soil, reducing irrigation dependency.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:40px 24px;">
+            <div style="font-size:3rem; font-weight:800; color:var(--green-main); margin-bottom:8px;">22%</div>
+            <div style="font-weight:600; font-size:1rem; margin-bottom:10px;">Higher Crop Yields</div>
+            <p class="card-text">Agroforestry systems produce on average 22% higher yields than conventional single-crop farming.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIPS -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">How to Get Started</h2>
+      <p class="section-sub">You do not need a large forest. Even small steps make a meaningful difference.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size:2rem; margin-bottom:12px;">&#127807;</div>
+            <div class="card-title">Plant Native Trees</div>
+            <p class="card-text">Choose trees native to your region. They require less water, support local wildlife, and grow stronger roots naturally. Neem, Peepal, and Banyan are excellent choices in India.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size:2rem; margin-bottom:12px;">&#127807;</div>
+            <div class="card-title">Border Planting</div>
+            <p class="card-text">Plant trees along the edges of your field to create a windbreak and natural border. This alone can reduce soil erosion and create a microclimate benefit without losing crop area.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size:2rem; margin-bottom:12px;">&#127807;</div>
+            <div class="card-title">Use Leaf Litter</div>
+            <p class="card-text">Collect fallen leaves from trees and spread them around your crop roots as mulch. This slowly decomposes into rich organic matter, acting like a free natural fertilizer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&#127807; GreenFarm</h3>
+        <p>
+          A Community Service Project by CSE students to raise awareness about
+          organic and traditional farming practices that protect our soil, water,
+          and health.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tree-plantation.html">Tree Plantation</a></li>
+          <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+          <li><a href="crop-guide.html">Crop Guide</a></li>
+          <li><a href="awareness.html">Awareness</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">CSP Project</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>GreenFarm CSP Project &mdash; CSE Department &mdash; All rights reserved &copy; 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Awareness - GreenFarm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <span>&#127807;</span> GreenFarm
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tree-plantation.html">Tree Plantation</a></li>
+      <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+      <li><a href="crop-guide.html">Crop Guide</a></li>
+      <li><a href="awareness.html" class="active">Awareness</a></li>
+      <li><a href="feedback.html" class="nav-cta">Join the Movement</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="tree-plantation.html">Tree Plantation</a>
+    <a href="organic-fertilizers.html">Organic Fertilizers</a>
+    <a href="crop-guide.html">Crop Guide</a>
+    <a href="awareness.html" class="active">Awareness</a>
+    <a href="feedback.html" class="nav-cta">Join the Movement</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1 class="red">The Hidden Cost of Chemicals</h1>
+    <p>
+      Synthetic fertilizers promised abundance, but they delivered a slow poison to
+      our ecosystems and our bodies. It's time to understand the true impact.
+    </p>
+  </div>
+
+  <!-- AWARENESS HERO IMAGE -->
+  <div style="padding: 0 40px; max-width: 1180px; margin: 0 auto;">
+    <div class="awareness-img-wrap">
+      <img
+        src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1400&q=80"
+        alt="Degraded farmland"
+      />
+      <div class="awareness-img-caption">
+        <h2>Dead Soil Yields Dead Food</h2>
+        <p>
+          Prolonged use of Urea and DAP destroys the soil's natural microbiome. It
+          turns rich, living earth into sterile dust that requires ever-increasing
+          amounts of water and chemicals just to produce a harvest.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- IMPACT CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+
+        <div class="awareness-card">
+          <div class="awareness-icon" style="color: var(--blue);">&#128167;</div>
+          <h3>Water Pollution</h3>
+          <p>
+            Excess nitrates and phosphates wash away into rivers and lakes, causing
+            massive algal blooms. These "dead zones" suffocate aquatic life and
+            contaminate the groundwater that rural communities rely on for drinking
+            and irrigation.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <div class="awareness-icon" style="color: var(--red);">&#10084;</div>
+          <h3>Farmer Health Risks</h3>
+          <p>
+            Farmers handling these chemicals without adequate protection face severe
+            long-term health risks, including respiratory issues, skin diseases, and
+            an increased incidence of certain cancers. Their families and children
+            are also exposed through contaminated food and water.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <div class="awareness-icon" style="color: #7f8c8d;">&#128128;</div>
+          <h3>Biodiversity Loss</h3>
+          <p>
+            Chemical runoff doesn't just kill pests; it decimates beneficial
+            insects, earthworms, and birds. Without these natural regulators,
+            crops become even more dependent on synthetic pesticides, creating a
+            destructive spiral.
+          </p>
+        </div>
+
+        <div class="awareness-card">
+          <div class="awareness-icon" style="color: var(--brown);">&#128663;</div>
+          <h3>The Economic Trap</h3>
+          <p>
+            As soil degrades, it requires more fertilizers to achieve the same
+            yield. Farmers become trapped in a cycle of debt, spending increasing
+            amounts on chemicals while soil fertility plummets and profits shrink
+            every season.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FACTS SECTION -->
+  <section class="section section-muted">
+    <div class="container">
+      <h2 class="section-title">Alarming Facts</h2>
+      <p class="section-sub">These are not predictions. This is the current reality of chemically farmed land across India and the world.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:36px 24px;">
+            <div style="font-size:2.8rem; font-weight:800; color:var(--red); margin-bottom:8px;">60%</div>
+            <div style="font-weight:600; margin-bottom:10px;">of India's farmland is degraded</div>
+            <p class="card-text">Overuse of chemical fertilizers is the primary driver of soil quality loss across agricultural regions.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:36px 24px;">
+            <div style="font-size:2.8rem; font-weight:800; color:var(--red); margin-bottom:8px;">70%</div>
+            <div style="font-weight:600; margin-bottom:10px;">of river pollution from agriculture</div>
+            <p class="card-text">Agricultural runoff carrying nitrogen and phosphate compounds is the leading source of water body contamination.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:36px 24px;">
+            <div style="font-size:2.8rem; font-weight:800; color:var(--red); margin-bottom:8px;">3x</div>
+            <div style="font-weight:600; margin-bottom:10px;">higher cancer risk for farmers</div>
+            <p class="card-text">Studies show farmers with prolonged exposure to chemical pesticides and fertilizers face a significantly elevated risk of several cancers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-banner">
+        <h2>Break the Cycle.</h2>
+        <p>
+          The transition to organic farming takes time, but the results are
+          sustainable, profitable, and safe for future generations. Every step
+          counts.
+        </p>
+        <a href="organic-fertilizers.html" class="btn">Start the Transition</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&#127807; GreenFarm</h3>
+        <p>
+          A Community Service Project by CSE students to raise awareness about
+          organic and traditional farming practices that protect our soil, water,
+          and health.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tree-plantation.html">Tree Plantation</a></li>
+          <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+          <li><a href="crop-guide.html">Crop Guide</a></li>
+          <li><a href="awareness.html">Awareness</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">CSP Project</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>GreenFarm CSP Project &mdash; CSE Department &mdash; All rights reserved &copy; 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>

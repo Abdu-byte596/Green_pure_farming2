@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback - GreenFarm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <span>&#127807;</span> GreenFarm
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tree-plantation.html">Tree Plantation</a></li>
+      <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+      <li><a href="crop-guide.html">Crop Guide</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="feedback.html" class="nav-cta active">Join the Movement</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="tree-plantation.html">Tree Plantation</a>
+    <a href="organic-fertilizers.html">Organic Fertilizers</a>
+    <a href="crop-guide.html">Crop Guide</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="feedback.html" class="nav-cta">Join the Movement</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Join the Movement</h1>
+    <p>
+      Have questions about organic farming? Want to collaborate with our CSP
+      initiative? Share your thoughts and we will get back to you.
+    </p>
+  </div>
+
+  <!-- FORM -->
+  <section class="section">
+    <div class="form-wrap">
+      <form id="contactForm" onsubmit="handleSubmit(event)">
+
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Jane Doe"
+          />
+          <div class="form-error" id="nameError">Please enter your name (at least 2 characters).</div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="jane@example.com"
+          />
+          <div class="form-error" id="emailError">Please enter a valid email address.</div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="How can we help you transition to organic farming?"
+          ></textarea>
+          <div class="form-error" id="messageError">Please enter a message (at least 10 characters).</div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- WHY JOIN -->
+  <section class="section section-muted">
+    <div class="container">
+      <h2 class="section-title">Why Reach Out?</h2>
+      <p class="section-sub">We are students on a mission, and every message matters to us.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:36px 24px;">
+            <div style="font-size:2.2rem; margin-bottom:14px;">&#127807;</div>
+            <div class="card-title">Get Guidance</div>
+            <p class="card-text">Ask us anything about transitioning your farm to organic methods. We will connect you with the right resources and knowledge.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:36px 24px;">
+            <div style="font-size:2.2rem; margin-bottom:14px;">&#127807;</div>
+            <div class="card-title">Share Your Story</div>
+            <p class="card-text">Are you already practising organic farming? Share your experience so we can feature it and inspire others in the community.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body" style="text-align:center; padding:36px 24px;">
+            <div style="font-size:2.2rem; margin-bottom:14px;">&#127807;</div>
+            <div class="card-title">Collaborate</div>
+            <p class="card-text">Schools, NGOs, and farming communities are welcome to partner with our CSP initiative for awareness events and workshops.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUCCESS TOAST -->
+  <div class="toast" id="successToast">
+    Message sent successfully! Thank you for reaching out.
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&#127807; GreenFarm</h3>
+        <p>
+          A Community Service Project by CSE students to raise awareness about
+          organic and traditional farming practices that protect our soil, water,
+          and health.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tree-plantation.html">Tree Plantation</a></li>
+          <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+          <li><a href="crop-guide.html">Crop Guide</a></li>
+          <li><a href="awareness.html">Awareness</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">CSP Project</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>GreenFarm CSP Project &mdash; CSE Department &mdash; All rights reserved &copy; 2025</p>
+    </div>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      let valid = true;
+
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+      const nameErr = document.getElementById('nameError');
+      const emailErr = document.getElementById('emailError');
+      const msgErr = document.getElementById('messageError');
+
+      nameErr.style.display = 'none';
+      emailErr.style.display = 'none';
+      msgErr.style.display = 'none';
+
+      if (name.value.trim().length < 2) {
+        nameErr.style.display = 'block';
+        valid = false;
+      }
+
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) {
+        emailErr.style.display = 'block';
+        valid = false;
+      }
+
+      if (message.value.trim().length < 10) {
+        msgErr.style.display = 'block';
+        valid = false;
+      }
+
+      if (valid) {
+        const toast = document.getElementById('successToast');
+        toast.style.display = 'block';
+        document.getElementById('contactForm').reset();
+        setTimeout(() => { toast.style.display = 'none'; }, 4000);
+      }
+    }
+  </script>
+
+</body>
+</html>

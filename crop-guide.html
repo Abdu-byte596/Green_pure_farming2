@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crop Guide - GreenFarm</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-logo">
+      <span>&#127807;</span> GreenFarm
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tree-plantation.html">Tree Plantation</a></li>
+      <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+      <li><a href="crop-guide.html" class="active">Crop Guide</a></li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="feedback.html" class="nav-cta">Join the Movement</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="tree-plantation.html">Tree Plantation</a>
+    <a href="organic-fertilizers.html">Organic Fertilizers</a>
+    <a href="crop-guide.html" class="active">Crop Guide</a>
+    <a href="awareness.html">Awareness</a>
+    <a href="feedback.html" class="nav-cta">Join the Movement</a>
+  </div>
+  <script>
+    function toggleMenu() {
+      document.getElementById('hamburger').classList.toggle('open');
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <h1>Crop-Specific Guidelines</h1>
+    <p>
+      Every crop has different nutritional needs. Use this quick reference guide to
+      pair your plants with the right organic solutions — no chemicals required.
+    </p>
+  </div>
+
+  <!-- TOP CROP IMAGE CARDS -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-3" style="margin-bottom: 56px;">
+
+        <div class="crop-img-card">
+          <img
+            src="https://images.unsplash.com/photo-1536054001197-1b6c08e63cc4?w=600&q=80"
+            alt="Rice"
+          />
+          <div class="crop-img-overlay">
+            <h3>Rice</h3>
+            <p>Compost + FYM + Azolla</p>
+          </div>
+        </div>
+
+        <div class="crop-img-card">
+          <img
+            src="https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&q=80"
+            alt="Wheat"
+          />
+          <div class="crop-img-overlay">
+            <h3>Wheat</h3>
+            <p>Vermicompost + Green Manure</p>
+          </div>
+        </div>
+
+        <div class="crop-img-card">
+          <img
+            src="https://images.unsplash.com/photo-1592841200221-a6898f307baa?w=600&q=80"
+            alt="Tomato"
+          />
+          <div class="crop-img-overlay">
+            <h3>Tomato</h3>
+            <p>Vermicompost + Neem Cake</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FULL TABLE -->
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Crop</th>
+              <th>Recommended Organic Fertilizers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rice</td>
+              <td>
+                <span class="tag">Compost</span>
+                <span class="tag">FYM</span>
+                <span class="tag">Azolla</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Wheat</td>
+              <td>
+                <span class="tag">Vermicompost</span>
+                <span class="tag">Green Manure</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Tomato</td>
+              <td>
+                <span class="tag">Vermicompost</span>
+                <span class="tag">Neem Cake</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Chili</td>
+              <td>
+                <span class="tag">Neem Cake</span>
+                <span class="tag">Compost</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Cotton</td>
+              <td>
+                <span class="tag">FYM</span>
+                <span class="tag">Bone Meal</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Turmeric</td>
+              <td>
+                <span class="tag">Vermicompost</span>
+                <span class="tag">Compost</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Maize</td>
+              <td>
+                <span class="tag">Green Manure</span>
+                <span class="tag">FYM</span>
+              </td>
+            </tr>
+            <tr>
+              <td>Onion</td>
+              <td>
+                <span class="tag">Compost</span>
+                <span class="tag">Neem Cake</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO USE -->
+  <section class="section section-muted">
+    <div class="container">
+      <h2 class="section-title">How to Apply Organic Fertilizers</h2>
+      <p class="section-sub">Application method matters as much as which fertilizer you choose. Follow these general guidelines.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size:2rem;margin-bottom:12px;">&#127807;</div>
+            <div class="card-title">Before Sowing</div>
+            <p class="card-text">Mix compost or FYM thoroughly into the topsoil 2&ndash;3 weeks before sowing. This gives time for nutrients to integrate into the soil and for microbial activity to activate.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size:2rem;margin-bottom:12px;">&#127807;</div>
+            <div class="card-title">During Growth</div>
+            <p class="card-text">Apply vermicompost as a side-dressing alongside growing crops. Keep it 3&ndash;4 cm away from the plant stem to avoid root burn and encourage outward root growth.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div style="font-size:2rem;margin-bottom:12px;">&#127807;</div>
+            <div class="card-title">Neem Cake Usage</div>
+            <p class="card-text">Mix neem cake into the soil at the base of each plant before transplanting. Reapply every 45 days for continuous pest protection and nitrogen supply throughout the growing season.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>&#127807; GreenFarm</h3>
+        <p>
+          A Community Service Project by CSE students to raise awareness about
+          organic and traditional farming practices that protect our soil, water,
+          and health.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tree-plantation.html">Tree Plantation</a></li>
+          <li><a href="organic-fertilizers.html">Organic Fertilizers</a></li>
+          <li><a href="crop-guide.html">Crop Guide</a></li>
+          <li><a href="awareness.html">Awareness</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="#">CSP Project</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>GreenFarm CSP Project &mdash; CSE Department &mdash; All rights reserved &copy; 2025</p>
+    </div>
+  </footer>
+
+</body>
+</html>
